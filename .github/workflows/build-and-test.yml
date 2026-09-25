@@ -31,7 +31,7 @@ jobs:
           /p:CoverletOutputFormat=cobertura
           /p:CoverletOutput=./TestResults/
           /p:Threshold=100
-          /p:ThresholdType=line,branch
+          /p:ThresholdType=line%2Cbranch
           /p:ThresholdStat=total
 
       - name: Upload coverage report
